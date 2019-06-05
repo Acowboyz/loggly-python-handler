@@ -8,10 +8,10 @@ unittest:
 	@nosetests --with-coverage --cover-html --cover-erase --cover-branches --cover-package=loggly
 
 lint:
-	@find . -name '*.py' -exec flake8 {} \;
+	@find ./loggly -name '*.py' -exec flake8 {} \;
 
 verboselint:
-	@find . -name '*.py' -exec flake8 --show-pep8 --show-source {} \;
+	@find ./loggly -name '*.py' -exec flake8 --show-pep8 --show-source {} \;
 
 # remove the doc folder
 clean:
